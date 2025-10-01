@@ -174,6 +174,41 @@ switch_case(choice)
 
 
 #count vowels in a string
+'''
+sen = input("enter a string: ")
+vowels = {
+    "a" : "a",
+    "e" : "e",
+    "i" : "i",
+    "o" : "o",
+    "u" : "u"
+}
+count = 0
+for i in sen:
+    if i == vowels.get(i):
+        count+=1
+print(f"No of vowels in {sen} are {count}")
+'''
+
+#gcd of two numbers using functions
+'''
+a = 172
+b=16
+print(a//b)
+print(a%b)'''
+
+
+def gcd(a,b):
+
+    if(a%b==0):
+        return b
+    else:
+        return gcd(b,a%b)
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print(f"GCD of {a} and {b} is {gcd(a,b)}")
+
 
 
 
